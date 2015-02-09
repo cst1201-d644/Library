@@ -2,35 +2,37 @@ package lab1;
 
 /**
  * Represents a book.
- * @author <a href="mailto:rkhatchadourian@citytech.cuny.edu>Raffi Khatchadourian</a>.
+ *
+ * @author <a href="mailto:rkhatchadourian@citytech.cuny.edu>Raffi
+ * Khatchadourian</a>.
  */
 public class Book {
 
     private String title;
-    
+
     private boolean borrowed;
 
     /**
      * Creates a new Book
      */
     public Book(String bookTitle) {
-        // Implement this method
+        title = bookTitle;
     }
-   
-    /** 
+
+    /**
      * Marks the book as rented
      */
-    public void borrowed() {
-        // Implement this method
+    public void rented() {
+        this.borrowed = true;
     }
-   
+
     /**
      * Marks the book as not rented
      */
     public void returned() {
         // Implement this method
     }
-   
+
     /**
      * Returns true if the book is rented, false otherwise
      */
@@ -38,13 +40,12 @@ public class Book {
         // Implement this method
         return false;
     }
-   
-    /** 
+
+    /**
      * Returns the title of the book
      */
     public String getTitle() {
-        // Implement this method
-        return null;
+        return title;
     }
 
     public static void main(String[] arguments) {
@@ -57,4 +58,4 @@ public class Book {
         example.returned();
         System.out.println("Borrowed? (should be false): " + example.isBorrowed());
     }
-} 
+}
