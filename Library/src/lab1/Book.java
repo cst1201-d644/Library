@@ -1,5 +1,9 @@
 package lab1;
 
+/**
+ * Represents a book.
+ * @author <a href="mailto:rkhatchadourian@citytech.cuny.edu>Raffi Khatchadourian</a>.
+ */
 public class Book {
 
     private String title;
