@@ -16,7 +16,7 @@ public class Book {
      * Creates a new Book
      */
     public Book(String bookTitle) {
-        title = bookTitle;
+        this.title = bookTitle;
     }
 
     /**
@@ -30,22 +30,21 @@ public class Book {
      * Marks the book as not rented
      */
     public void returned() {
-        // Implement this method
+        this.borrowed = false;
     }
 
     /**
      * Returns true if the book is rented, false otherwise
      */
     public boolean isBorrowed() {
-        // Implement this method
-        return false;
+        return this.borrowed;
     }
 
     /**
      * Returns the title of the book
      */
     public String getTitle() {
-        return title;
+        return this.title;
     }
 
     public static void main(String[] arguments) {
