@@ -7,9 +7,12 @@ import java.util.stream.Stream;
 
 /**
  * A representation of a library of books.
- * @author <a href="mailto:rkhatchadourian@citytech.cuny.edu">Raffi Khatchadourian</a>.
+ *
+ * @author <a href="mailto:rkhatchadourian@citytech.cuny.edu">Raffi
+ * Khatchadourian</a>.
  */
 public class Library {
+
 	/**
 	 * The hour that every library opens.
 	 */
